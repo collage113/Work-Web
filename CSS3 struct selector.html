@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>CSS3 struct selector</title>
+        <style>
+             ul { overflow: hidden; }
+             li {list-style: none; float: left left; padding: 15px;}
+             li:first-child { border-radius: 10px 0 0 10px; }
+             li:last-child { border-radius: 0 10px 10px 0 ;}
+             li:nth-child(2n) {background-color: rgba(255, 30, 0, 0);}
+             li:nth-child(2n+1) {background-color: #00802b;}
+             #list > li:first-child > a {color: blue}
+        </style>
+    </head>
+    <body>
+        <div>
+            <ul>
+                <li>첫번째</li>
+                <li>두번째</li>
+                <li>세번째</li>
+                <li>네번째</li>    
+            </ul>
+        </div>
+        <div>
+                <li>여섯번째</li>
+                <li>일곱번째</li>
+                <li>여덟번째</li>
+                <li>아홉번째</li>
+        </div>
+        <div id="list">
+            <ul>
+            <li><a href="#">주의사항</a></li>            
+            <li><a href="#">주의사항</a></li>   
+            <li><a href="#">주의사항</a></li>   
+            </ul>  
+        </div>
+    </body>
+</html>

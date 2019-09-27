@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>CSS3 Attribute/parent/child selector</title>
+        <style>
+             input[type="text"] {background: red;}
+             input[type="password"] {background:blue;}
+             #header h1 > {color: red;}
+             #section h1 > {color: sandybrown;}
+             table > tbody > tr > th {color: greenyellow;}
+             #action > h1:hover {color: red;}
+             #action > h1:active {color: blue;}
+             #status > input:enabled {background-color: white;}
+             #status > input:disabled {background-color: gray;}
+             #status > input:focus {background-color: orange;}
+        </style>   
+    </head>
+    <body>
+        <div>
+            <form>
+                <input type="text">
+                <input type="password">
+            </form>
+        </div>
+        <div id="section">
+            <h1 class="title">Title</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Cupiditate non alias repellat enim molestiae! Sint dolorem excepturi 
+                hic laudantium neque dicta placeat recusandae modi, temporibus, ducimus 
+                iusto nemo atque ad!</p>
+        </div>
+        <div id="section">
+            <h1 class="title">Title</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                 Labore, perspiciatis suscipit dolor iure eum delectus optio 
+                 repudiandae veniam pariatur quidem libero nam excepturi, 
+                 voluptatibus hic atque incidunt ab! Ad, assumenda!</p>
+        </div>
+        <hr>
+        <div>
+            <table border="1">
+                <tr>
+                    <th>이름</th>
+                    <th>지역</th>
+
+                </tr>
+                <tr>
+                    <td>윤석찬</td>
+                    <td>한경닷컴 교육원생</td>  
+                </tr>
+                
+            </table>
+        </div>
+        <hr>
+        <div id="action">
+            <h1>반응선택자</h1>
+        </div>
+        <hr>
+        <div id="status">
+            <h2>사용가능</h2>
+            <input>
+            <h2>사용 불가능</h2>
+            <input disabled="disabled">
+        </div>
+    </body>
+</html>
